@@ -1,0 +1,11 @@
+{
+  "name": "huno-backup",
+  "version": "1.0.0",
+  "description": "Backup automático HUNO® Sistema",
+  "scripts": {
+    "backup": "node backup.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  }
+}
