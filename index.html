@@ -882,10 +882,8 @@ body { font-family: 'Trispace', monospace; background: #dff1fb; color: #1a1a2e; 
         <option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
       </select>
       <input type="number" id="cartola-anio-sel" value="2026" min="2020" max="2030" onchange="renderCartola()" style="width:72px;padding:7px 10px;background:#f0fff4;border:1.5px solid #27ae60;border-radius:8px;font-family:Trispace,monospace;font-size:12px;outline:none">
-      <label id="cartola-upload-label" style="background:#27ae60;color:#fff;border-radius:8px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:Trispace,monospace;font-weight:700" onclick="checkPeriodoAntesDeSub(event)">
-        📂 Subir Cartola
-        <input type="file" id="cartola-file-input" accept=".xlsx,.xls,.csv" style="display:none;pointer-events:none" onchange="handleCartolaUpload(event)">
-      </label>
+      <button onclick="checkPeriodoAntesDeSub()" style="background:#27ae60;color:#fff;border:none;border-radius:8px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:Trispace,monospace;font-weight:700">📂 Subir Cartola</button>
+      <input type="file" id="cartola-file-input" accept=".xlsx,.xls,.csv" style="display:none" onchange="handleCartolaUpload(event)">
       <button class="btn" onclick="exportarCartolaMes()" style="background:#1a5c2a;color:#fff;border:none">📊 Exportar Mes</button>
     </div>
   </div>
@@ -4590,8 +4588,7 @@ function renderCartolaResumen(movs) {
 
 // MESES_NOMBRES ya declarado arriba
 
-function checkPeriodoAntesDeSub(e) {
-  e.preventDefault();
+function checkPeriodoAntesDeSub() {
   const mes  = parseInt(document.getElementById('cartola-mes-sel').value) || 0;
   const anio = parseInt(document.getElementById('cartola-anio-sel').value) || 0;
   const MESES_N2 = ['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
