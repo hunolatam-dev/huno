@@ -2,19 +2,16 @@ name: Backup Supabase — HUNO
 
 on:
   schedule:
-    # Todos los días a las 03:00 AM Chile (06:00 UTC)
-    - cron: '0 6 * * *'
-  workflow_dispatch:  # permite ejecutar manualmente desde GitHub Actions
+    - cron: '0 6 * * *'   # 03:00 AM Chile (06:00 UTC) todos los días
+  workflow_dispatch:        # ejecución manual desde GitHub Actions
 
 jobs:
   backup:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repositorio
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -22,7 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Instalar dependencias
-        run: npm install @supabase/supabase-js
+        run: npm install
 
       - name: Ejecutar backup
         env:
@@ -35,5 +32,5 @@ jobs:
           git config user.name "HUNO Backup Bot"
           git config user.email "backup@huno.cl"
           git add backups/
-          git diff --staged --quiet || git commit -m "🗄️ Backup automático $(date +'%Y-%m-%d %H:%M UTC')"
+          git diff --staged --quiet || git commit -m "Backup $(date +'%Y-%m-%d %H:%M UTC')"
           git push
