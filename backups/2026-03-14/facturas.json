@@ -1,0 +1,72 @@
+{
+  "tabla": "facturas",
+  "fecha_backup": "2026-03-14T16:29:37.122Z",
+  "total": 5,
+  "datos": [
+    {
+      "id": 2,
+      "cliente_id": 1,
+      "folio": "3253",
+      "monto": 49900,
+      "anio": 2026,
+      "mes": 1,
+      "pagado": true,
+      "fecha_pago": "2026-03-13",
+      "usuario_pago": "Constanza Ortiz",
+      "usuario_creacion": "Constanza Ortiz",
+      "created_at": "2026-03-13T15:26:00.412227+00:00"
+    },
+    {
+      "id": 3,
+      "cliente_id": 1,
+      "folio": "3289",
+      "monto": 49900,
+      "anio": 2026,
+      "mes": 2,
+      "pagado": false,
+      "fecha_pago": null,
+      "usuario_pago": null,
+      "usuario_creacion": "Constanza Ortiz",
+      "created_at": "2026-03-13T15:26:22.167043+00:00"
+    },
+    {
+      "id": 5,
+      "cliente_id": 2,
+      "folio": "3255",
+      "monto": 30000,
+      "anio": 2026,
+      "mes": 1,
+      "pagado": true,
+      "fecha_pago": "2026-03-13",
+      "usuario_pago": "Constanza Ortiz",
+      "usuario_creacion": "Constanza Ortiz",
+      "created_at": "2026-03-13T15:27:34.373958+00:00"
+    },
+    {
+      "id": 6,
+      "cliente_id": 2,
+      "folio": "3290",
+      "monto": 30000,
+      "anio": 2026,
+      "mes": 2,
+      "pagado": true,
+      "fecha_pago": "2026-03-13",
+      "usuario_pago": "Constanza Ortiz",
+      "usuario_creacion": "Constanza Ortiz",
+      "created_at": "2026-03-13T15:27:49.151946+00:00"
+    },
+    {
+      "id": 12,
+      "cliente_id": 3,
+      "folio": "3195",
+      "monto": 10000,
+      "anio": 2026,
+      "mes": 1,
+      "pagado": true,
+      "fecha_pago": "2026-03-13",
+      "usuario_pago": "Constanza Ortiz",
+      "usuario_creacion": "Constanza Ortiz",
+      "created_at": "2026-03-13T15:34:40.607441+00:00"
+    }
+  ]
+}
