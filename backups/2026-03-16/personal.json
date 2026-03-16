@@ -1,0 +1,67 @@
+{
+  "tabla": "personal",
+  "fecha_backup": "2026-03-16T09:17:25.946Z",
+  "total": 5,
+  "datos": [
+    {
+      "id": 3,
+      "nombre": "Bastian",
+      "apellido": "Marre",
+      "rol": "admin",
+      "activo": true,
+      "clave": "RG9uYXRvMjA=",
+      "correo": "marre0201@gmail.com",
+      "created_at": "2026-03-11T21:03:26.144844+00:00",
+      "roles": null,
+      "es_admin": false
+    },
+    {
+      "id": 2,
+      "nombre": "Constanza",
+      "apellido": "Ortiz",
+      "rol": "finanzas",
+      "activo": true,
+      "clave": "QmVuamkzMTEw",
+      "correo": "constanzaortiz0201@gmail.com",
+      "created_at": "2026-03-11T21:03:26.144844+00:00",
+      "roles": null,
+      "es_admin": false
+    },
+    {
+      "id": 1,
+      "nombre": "Maite",
+      "apellido": "Veron",
+      "rol": "rrhh",
+      "activo": true,
+      "clave": "QW1pZ2ExMjI1",
+      "correo": "maite.veron@huno.cl",
+      "created_at": "2026-03-11T21:03:26.144844+00:00",
+      "roles": null,
+      "es_admin": false
+    },
+    {
+      "id": 4,
+      "nombre": "Noelia",
+      "apellido": "Castillo",
+      "rol": "contabilidad",
+      "activo": true,
+      "clave": "bm9lbGlhMjI=",
+      "correo": "alertas@huno.cl",
+      "created_at": "2026-03-12T14:16:48.65801+00:00",
+      "roles": null,
+      "es_admin": false
+    },
+    {
+      "id": 5,
+      "nombre": "Prueba",
+      "apellido": "Prueba",
+      "rol": "contabilidad",
+      "activo": true,
+      "clave": null,
+      "correo": null,
+      "created_at": "2026-03-14T20:22:55.835506+00:00",
+      "roles": null,
+      "es_admin": false
+    }
+  ]
+}
