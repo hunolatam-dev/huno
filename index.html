@@ -2799,6 +2799,225 @@ function generateImage(id) {
   logActivity("generar_imagen","contabilidad",id,"imagen","",yyyymm+"_F29_"+cliente.num);
 }
 
+
+// ===================== HISTORIAL F29 =====================
+
+let _hf29ClienteId = null;
+let _hf29Data = {};         // { "2026-2": {estado,mensaje,imagen_b64}, ... }
+let _ef29Contexto = null;   // { clienteId, mes, anio }
+let _ef29Estado = null;
+let _ef29ImgB64 = null;
+
+const MESES_CORTOS_F29 = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+
+async function abrirHistorialF29(clienteId) {
+  _hf29ClienteId = clienteId;
+  const cli = clientes.find(c=>c.id===clienteId);
+  document.getElementById("hf29-nombre").textContent = cli ? cli.nombre : "";
+
+  // Cargar datos desde Supabase
+  const {data} = await sb.from("f29_historial")
+    .select("*").eq("cliente_id", clienteId).order("anio").order("mes");
+  _hf29Data = {};
+  if(data) data.forEach(function(r) {
+    _hf29Data[r.anio+"-"+r.mes] = r;
+  });
+
+  renderTablaHistorialF29();
+  const modal = document.getElementById("modal-historial-f29");
+  modal.style.display = "flex";
+}
+
+function cerrarHistorialF29() {
+  document.getElementById("modal-historial-f29").style.display = "none";
+  _hf29ClienteId = null;
+}
+
+function renderTablaHistorialF29() {
+  const anioActual = new Date().getFullYear();
+  const anos = [];
+  for(let a = anioActual; a >= anioActual - 3; a--) anos.push(a);
+
+  // Thead: Formulario | meses columnas por año
+  let thead = "<tr><th style='text-align:left;padding:8px 10px;background:#f0f8ff;border-radius:6px;font-size:11px;color:#2a6a8a;min-width:100px'>Período</th>";
+  anos.forEach(function(a) {
+    thead += "<th colspan='1' style='padding:6px 8px;background:#0a2a3a;color:#7ec8e3;font-size:11px;font-weight:700;text-align:center;border-radius:4px'>"+a+"</th>";
+  });
+  thead += "</tr>";
+  document.getElementById("hf29-thead").innerHTML = thead;
+
+  // Tbody: una fila por mes
+  let tbody = "";
+  for(let m = 1; m <= 12; m++) {
+    tbody += "<tr style='border-bottom:1px solid #f0f0f0'>";
+    tbody += "<td style='padding:7px 10px;font-size:12px;font-weight:700;color:#0a2a3a;white-space:nowrap'>"+MESES_CORTOS_F29[m-1]+"</td>";
+    anos.forEach(function(a) {
+      const key = a+"-"+m;
+      const rec = _hf29Data[key];
+      const estado = rec ? rec.estado : null;
+      let btn = "";
+      if(!estado) {
+        btn = "<button onclick='abrirEstadoF29("+_hf29ClienteId+","+m+","+a+")' style='background:none;border:1.5px solid #ccc;border-radius:50%;width:28px;height:28px;cursor:pointer;color:#bbb;font-size:14px' title='Registrar'>—</button>";
+      } else if(estado==="ok") {
+        btn = "<button onclick='abrirEstadoF29("+_hf29ClienteId+","+m+","+a+")' style='background:#27ae60;border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;color:#fff;font-size:14px' title='"+(rec.mensaje||"OK")+"'>✓</button>";
+      } else if(estado==="mal") {
+        btn = "<button onclick='abrirEstadoF29("+_hf29ClienteId+","+m+","+a+")' style='background:#dc3545;border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;color:#fff;font-size:14px' title='"+(rec.mensaje||"Problema")+"'>✕</button>";
+      } else if(estado==="obs") {
+        btn = "<button onclick='abrirEstadoF29("+_hf29ClienteId+","+m+","+a+")' style='background:#f0a500;border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;color:#fff;font-size:14px' title='"+(rec.mensaje||"Observación")+"'>▲</button>";
+      }
+      tbody += "<td style='padding:6px 8px;text-align:center'>"+btn+"</td>";
+    });
+    tbody += "</tr>";
+  }
+  document.getElementById("hf29-tbody").innerHTML = tbody;
+}
+
+function abrirEstadoF29(clienteId, mes, anio) {
+  _ef29Contexto = {clienteId, mes, anio};
+  _ef29Estado = null;
+  _ef29ImgB64 = null;
+
+  // Cargar datos existentes si los hay
+  const key = anio+"-"+mes;
+  const rec = _hf29Data[key];
+
+  document.getElementById("ef29-titulo").textContent =
+    MESES_CORTOS_F29[mes-1] + " " + anio + " — " +
+    (clientes.find(c=>c.id===clienteId)||{nombre:""}).nombre;
+  document.getElementById("ef29-msg").value = rec ? (rec.mensaje||"") : "";
+  document.getElementById("ef29-img-preview").style.display = "none";
+  document.getElementById("ef29-img-prev-img").src = "";
+
+  if(rec && rec.imagen_b64) {
+    document.getElementById("ef29-img-prev-img").src = rec.imagen_b64;
+    document.getElementById("ef29-img-preview").style.display = "block";
+    _ef29ImgB64 = rec.imagen_b64;
+  }
+
+  // Preseleccionar estado actual
+  if(rec && rec.estado) {
+    selEstadoF29(rec.estado);
+  } else {
+    // Limpiar selección visual
+    ["ok","mal","obs"].forEach(function(s) {
+      const btn = document.getElementById("ef29-btn-"+s);
+      if(btn) btn.style.opacity = "1";
+    });
+    _ef29Estado = null;
+  }
+
+  // Mensaje obligatorio solo para mal/obs
+  actualizarObligatoriedadMensaje();
+
+  const modal = document.getElementById("modal-estado-f29");
+  modal.style.display = "flex";
+}
+
+function selEstadoF29(estado) {
+  _ef29Estado = estado;
+  const colores = {ok:"#27ae60", mal:"#dc3545", obs:"#f0a500"};
+  ["ok","mal","obs"].forEach(function(s) {
+    const btn = document.getElementById("ef29-btn-"+s);
+    if(!btn) return;
+    btn.style.opacity = s===estado ? "1" : "0.35";
+    btn.style.transform = s===estado ? "scale(1.05)" : "scale(1)";
+  });
+  actualizarObligatoriedadMensaje();
+}
+
+function actualizarObligatoriedadMensaje() {
+  const req = document.getElementById("ef29-msg-req");
+  const wrap = document.getElementById("ef29-msg-wrap");
+  const esObligatorio = _ef29Estado === "mal" || _ef29Estado === "obs";
+  if(req) req.style.display = esObligatorio ? "inline" : "none";
+}
+
+function cerrarEstadoF29() {
+  document.getElementById("modal-estado-f29").style.display = "none";
+  _ef29Contexto = null;
+  _ef29Estado = null;
+  _ef29ImgB64 = null;
+}
+
+function cargarImgEstadoF29(inp) {
+  const file = inp.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    _ef29ImgB64 = e.target.result;
+    document.getElementById("ef29-img-prev-img").src = _ef29ImgB64;
+    document.getElementById("ef29-img-preview").style.display = "block";
+  };
+  reader.readAsDataURL(file);
+}
+
+function limpiarImgEstadoF29() {
+  _ef29ImgB64 = null;
+  document.getElementById("ef29-img-preview").style.display = "none";
+  document.getElementById("ef29-img-prev-img").src = "";
+  document.getElementById("ef29-img-inp").value = "";
+}
+
+// Pegar imagen con Ctrl+V en el modal
+document.addEventListener("paste", function(e) {
+  if(document.getElementById("modal-estado-f29").style.display === "none") return;
+  const items = e.clipboardData && e.clipboardData.items;
+  if(!items) return;
+  for(let i=0; i<items.length; i++) {
+    if(items[i].type.indexOf("image") !== -1) {
+      const file = items[i].getAsFile();
+      const reader = new FileReader();
+      reader.onload = function(ev) {
+        _ef29ImgB64 = ev.target.result;
+        document.getElementById("ef29-img-prev-img").src = _ef29ImgB64;
+        document.getElementById("ef29-img-preview").style.display = "block";
+      };
+      reader.readAsDataURL(file);
+      break;
+    }
+  }
+});
+
+async function guardarEstadoF29() {
+  if(!_ef29Estado) { showToast("Selecciona un estado (✓ / ✕ / ▲)", "error"); return; }
+  const msg = document.getElementById("ef29-msg").value.trim();
+  if((_ef29Estado==="mal"||_ef29Estado==="obs") && !msg) {
+    showToast("El mensaje es obligatorio para este estado", "error");
+    document.getElementById("ef29-msg").focus();
+    return;
+  }
+  const {clienteId, mes, anio} = _ef29Contexto;
+  const btn = document.getElementById("ef29-guardar-btn");
+  btn.textContent = "Guardando...";
+  btn.disabled = true;
+
+  try {
+    const row = {
+      cliente_id: clienteId,
+      mes: mes,
+      anio: anio,
+      estado: _ef29Estado,
+      mensaje: msg || null,
+      imagen_b64: _ef29ImgB64 || null,
+      usuario: currentUser || "Sistema",
+    };
+    const {error} = await sb.from("f29_historial")
+      .upsert(row, {onConflict: "cliente_id,mes,anio"});
+    if(error) throw error;
+
+    // Actualizar caché local
+    _hf29Data[anio+"-"+mes] = row;
+    cerrarEstadoF29();
+    renderTablaHistorialF29();
+    showToast("✓ Estado F29 guardado", "ok");
+  } catch(e) {
+    showToast("Error al guardar: "+e.message, "error");
+  } finally {
+    btn.textContent = "Guardar";
+    btn.disabled = false;
+  }
+}
+
 // ===================== RENDER ALL =====================
 function renderAll(force) {
   const active = document.activeElement;
@@ -3002,7 +3221,7 @@ function renderContabilidad() {
 
     if(isOpen) {
       html += "<tr><td colspan=\"12\" class=\"detail-td\">"+
-        "<div style=\"font-size:10px;color:#0a2a3a;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;font-weight:700\">Detalle — "+c.nombre+"</div>"+
+        "<div style=\"font-size:10px;color:#0a2a3a;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;font-weight:700\"><a href=\"#\" onclick=\"abrirHistorialF29("+c.id+");return false;\" style=\"color:#0a2a3a;text-decoration:none;border-bottom:1.5px solid #7ec8e3;cursor:pointer\" title=\"Ver historial F29\">Detalle — "+c.nombre+" ↗</a></div>"+
         "<div class=\"detail-grid\">"+
         buildDetailCard(c.id,"guardar_f29","Guardar F29","#2196f3","contabilidad")+
         buildDetailCard(c.id,"pagar_f29","Pagar F29","#dc3545","contabilidad")+
@@ -7947,6 +8166,72 @@ function limpiarApiKey() {
 <!-- ===== MODAL IMAGEN AMPLIADA ===== -->
 <div id="pet-img-grande-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:9999;display:none;align-items:center;justify-content:center;cursor:zoom-out" onclick="this.style.display='none'">
   <img id="pet-img-grande" style="max-width:90vw;max-height:90vh;border-radius:12px">
+</div>
+
+
+<!-- ===== MODAL HISTORIAL F29 ===== -->
+<div id="modal-historial-f29" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9995;align-items:flex-start;justify-content:center;overflow-y:auto;padding:20px 0">
+  <div style="background:#fff;border-radius:20px;width:min(98vw,820px);margin:auto;box-shadow:0 24px 64px rgba(0,0,0,0.22);overflow:hidden;font-family:Trispace,monospace">
+    <!-- Header -->
+    <div style="background:linear-gradient(135deg,#0a2a3a,#1a4a6a);padding:20px 24px;display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#7ec8e3;letter-spacing:2px;text-transform:uppercase">Historial F29</div>
+        <div id="hf29-nombre" style="font-size:17px;font-weight:900;color:#fff;margin-top:4px"></div>
+      </div>
+      <button onclick="cerrarHistorialF29()" style="background:rgba(255,255,255,0.15);border:none;color:#fff;border-radius:50%;width:34px;height:34px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center">✕</button>
+    </div>
+    <!-- Leyenda -->
+    <div style="padding:12px 24px 0;display:flex;gap:16px;flex-wrap:wrap">
+      <span style="font-size:11px;display:flex;align-items:center;gap:5px"><span style="background:#27ae60;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px">✓</span> Declarado OK</span>
+      <span style="font-size:11px;display:flex;align-items:center;gap:5px"><span style="background:#dc3545;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px">✕</span> Con problema</span>
+      <span style="font-size:11px;display:flex;align-items:center;gap:5px"><span style="background:#f0a500;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px">▲</span> Pendiente/Observación</span>
+      <span style="font-size:11px;color:#aaa">— Sin registro</span>
+    </div>
+    <!-- Grilla -->
+    <div style="padding:16px 24px;overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:12px" id="hf29-tabla">
+        <thead id="hf29-thead"></thead>
+        <tbody id="hf29-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL REGISTRAR ESTADO F29 ===== -->
+<div id="modal-estado-f29" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9996;align-items:center;justify-content:center">
+  <div style="background:#fff;border-radius:16px;width:min(96vw,460px);box-shadow:0 20px 60px rgba(0,0,0,0.25);font-family:Trispace,monospace;overflow:hidden">
+    <div id="ef29-header" style="padding:16px 20px;display:flex;align-items:center;justify-content:space-between">
+      <div id="ef29-titulo" style="font-size:14px;font-weight:700;color:#0a2a3a"></div>
+      <button onclick="cerrarEstadoF29()" style="background:#f0f4f8;border:none;border-radius:50%;width:30px;height:30px;font-size:16px;cursor:pointer">✕</button>
+    </div>
+    <div style="padding:0 20px 20px;display:flex;flex-direction:column;gap:14px">
+      <!-- Selector de estado -->
+      <div style="display:flex;gap:10px">
+        <button id="ef29-btn-ok" onclick="selEstadoF29('ok')" style="flex:1;padding:10px;border-radius:10px;border:2px solid #27ae60;background:#f0fff4;color:#27ae60;font-family:Trispace,monospace;font-weight:700;font-size:13px;cursor:pointer">✓ OK</button>
+        <button id="ef29-btn-mal" onclick="selEstadoF29('mal')" style="flex:1;padding:10px;border-radius:10px;border:2px solid #dc3545;background:#fff5f5;color:#dc3545;font-family:Trispace,monospace;font-weight:700;font-size:13px;cursor:pointer">✕ Problema</button>
+        <button id="ef29-btn-obs" onclick="selEstadoF29('obs')" style="flex:1;padding:10px;border-radius:10px;border:2px solid #f0a500;background:#fffbf0;color:#f0a500;font-family:Trispace,monospace;font-weight:700;font-size:13px;cursor:pointer">▲ Observ.</button>
+      </div>
+      <!-- Mensaje (obligatorio para mal/obs) -->
+      <div id="ef29-msg-wrap">
+        <label style="font-size:11px;font-weight:700;color:#2a6a8a;letter-spacing:1px">MENSAJE <span id="ef29-msg-req" style="color:#dc3545">*</span></label>
+        <textarea id="ef29-msg" rows="3" placeholder="Describe qué ocurrió con este período..." style="width:100%;margin-top:5px;border:1.5px solid #7ec8e3;border-radius:8px;padding:8px 10px;font-family:Trispace,monospace;font-size:12px;resize:vertical;outline:none;box-sizing:border-box"></textarea>
+      </div>
+      <!-- Imagen opcional -->
+      <div>
+        <label style="font-size:11px;font-weight:700;color:#2a6a8a;letter-spacing:1px">IMAGEN OPCIONAL</label>
+        <div style="margin-top:6px;display:flex;gap:8px;align-items:center">
+          <div id="ef29-img-drop" onclick="document.getElementById('ef29-img-inp').click()" style="border:2px dashed #7ec8e3;border-radius:8px;padding:10px 16px;cursor:pointer;font-size:11px;color:#2a6a8a;flex:1;text-align:center">📎 Click o pega imagen (Ctrl+V)</div>
+          <input id="ef29-img-inp" type="file" accept="image/*" style="display:none" onchange="cargarImgEstadoF29(this)">
+        </div>
+        <div id="ef29-img-preview" style="margin-top:8px;display:none"><img id="ef29-img-prev-img" style="max-width:100%;max-height:150px;border-radius:8px;border:1px solid #e0e0e0"><button onclick="limpiarImgEstadoF29()" style="display:block;margin-top:4px;font-size:10px;color:#dc3545;background:none;border:none;cursor:pointer">✕ Quitar imagen</button></div>
+      </div>
+      <!-- Botones -->
+      <div style="display:flex;gap:10px;margin-top:4px">
+        <button onclick="cerrarEstadoF29()" style="flex:1;padding:10px;border-radius:10px;border:1.5px solid #ddd;background:#f8f8f8;font-family:Trispace,monospace;font-size:12px;cursor:pointer">Cancelar</button>
+        <button onclick="guardarEstadoF29()" id="ef29-guardar-btn" style="flex:1;padding:10px;border-radius:10px;border:none;background:#0a2a3a;color:#fff;font-family:Trispace,monospace;font-weight:700;font-size:12px;cursor:pointer">Guardar</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- ===== FOOTER FIJO ===== -->
