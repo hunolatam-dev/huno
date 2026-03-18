@@ -1,5 +1,11 @@
 [
   {
+    "fecha": "2026-03-18",
+    "hora": "08:04",
+    "total_registros": 2424,
+    "errores": 0
+  },
+  {
     "fecha": "2026-03-17",
     "hora": "08:06",
     "total_registros": 2319,
