@@ -1,0 +1,13 @@
+{
+  "tabla": "cartola_cuentas",
+  "fecha_backup": "2026-03-25T08:05:25.468Z",
+  "total": 1,
+  "datos": [
+    {
+      "id": "cta_1773433581778",
+      "nombre": "CTA CTE",
+      "banco": "BCI",
+      "tipo": "huno"
+    }
+  ]
+}
