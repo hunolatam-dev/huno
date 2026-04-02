@@ -1,0 +1,21 @@
+{
+  "tabla": "cartola_cuentas",
+  "fecha_backup": "2026-04-02T09:39:47.048Z",
+  "total": 2,
+  "datos": [
+    {
+      "id": "cta_1773433581778",
+      "nombre": "CTA CTE",
+      "banco": "BCI",
+      "tipo": "huno",
+      "saldo_inicial": 0
+    },
+    {
+      "id": "cta_1774748796017",
+      "nombre": "CTA CTE BCI",
+      "banco": "BCI",
+      "tipo": "huno",
+      "saldo_inicial": 7750000
+    }
+  ]
+}
