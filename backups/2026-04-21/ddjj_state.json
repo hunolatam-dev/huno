@@ -1,0 +1,2283 @@
+{
+  "tabla": "ddjj_state",
+  "fecha_backup": "2026-04-21T07:24:44.767Z",
+  "total": 87,
+  "datos": [
+    {
+      "cliente_id": 13,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "01-04-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-01T14:12:02.345Z"
+    },
+    {
+      "cliente_id": 92,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "no_aplica"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T14:02:56.966Z"
+    },
+    {
+      "cliente_id": 90,
+      "asignadas": [
+        "1948",
+        "F22"
+      ],
+      "checks": {},
+      "updated_at": "2026-03-14T19:13:46.734Z"
+    },
+    {
+      "cliente_id": 3,
+      "asignadas": [
+        "1948",
+        "F22",
+        "1837"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T17:09:17.797Z"
+    },
+    {
+      "cliente_id": 5,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "no_aplica"
+        },
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "13/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-01T14:20:50.809Z"
+    },
+    {
+      "cliente_id": 95,
+      "asignadas": [
+        "1948",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T19:17:47.845Z"
+    },
+    {
+      "cliente_id": 20,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:29:47.512Z"
+    },
+    {
+      "cliente_id": 9,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "02-04-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-02T16:09:06.132Z"
+    },
+    {
+      "cliente_id": 19,
+      "asignadas": [
+        "1948",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:26:14.810Z"
+    },
+    {
+      "cliente_id": 11,
+      "asignadas": [
+        "1947",
+        "1835",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {},
+      "updated_at": "2026-03-13T17:24:20.284Z"
+    },
+    {
+      "cliente_id": 70,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T14:03:26.142Z"
+    },
+    {
+      "cliente_id": 69,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T14:03:31.756Z"
+    },
+    {
+      "cliente_id": 6,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T12:59:22.441Z"
+    },
+    {
+      "cliente_id": 27,
+      "asignadas": [
+        "1948",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T14:07:36.689Z"
+    },
+    {
+      "cliente_id": 8,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T17:22:52.169Z"
+    },
+    {
+      "cliente_id": 73,
+      "asignadas": [
+        "1948",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T19:47:13.231Z"
+    },
+    {
+      "cliente_id": 58,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T15:30:41.167Z"
+    },
+    {
+      "cliente_id": 29,
+      "asignadas": [
+        "1948",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T14:50:41.586Z"
+    },
+    {
+      "cliente_id": 33,
+      "asignadas": [
+        "1948",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T18:33:16.516Z"
+    },
+    {
+      "cliente_id": 4,
+      "asignadas": [
+        "1947",
+        "1835",
+        "1879",
+        "F22"
+      ],
+      "checks": {},
+      "updated_at": "2026-03-13T17:10:21.484Z"
+    },
+    {
+      "cliente_id": 22,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T14:01:02.520Z"
+    },
+    {
+      "cliente_id": 2,
+      "asignadas": [
+        "1948",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T17:07:50.860Z"
+    },
+    {
+      "cliente_id": 64,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "07/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T18:46:44.169Z"
+    },
+    {
+      "cliente_id": 12,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T17:47:07.464Z"
+    },
+    {
+      "cliente_id": 17,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T17:57:12.546Z"
+    },
+    {
+      "cliente_id": 16,
+      "asignadas": [
+        "1948",
+        "1835",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T17:55:32.917Z"
+    },
+    {
+      "cliente_id": 24,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {},
+      "updated_at": "2026-03-13T18:11:47.751Z"
+    },
+    {
+      "cliente_id": 21,
+      "asignadas": [
+        "1948",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T18:05:27.273Z"
+    },
+    {
+      "cliente_id": 23,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "11/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T18:09:46.692Z"
+    },
+    {
+      "cliente_id": 1,
+      "asignadas": [
+        "1948",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "no_aplica"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "F22": {
+          "obs": "agregar 2.400.000 de arriendos pagados e incentivo al ahorro",
+          "resp": "Bastian Marre",
+          "fecha": "07-04-2026",
+          "estado": "pendiente"
+        }
+      },
+      "updated_at": "2026-04-07T21:55:05.959Z"
+    },
+    {
+      "cliente_id": 18,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T18:29:26.089Z"
+    },
+    {
+      "cliente_id": 61,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T20:37:52.134Z"
+    },
+    {
+      "cliente_id": 41,
+      "asignadas": [
+        "1948",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1837": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "27-03-2026",
+          "estado": "no_aplica"
+        },
+        "1879": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T21:22:18.949Z"
+    },
+    {
+      "cliente_id": 77,
+      "asignadas": [
+        "1948",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T21:32:20.898Z"
+    },
+    {
+      "cliente_id": 25,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "1837",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T22:12:34.781Z"
+    },
+    {
+      "cliente_id": 54,
+      "asignadas": [
+        "1943",
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:31:04.334Z"
+    },
+    {
+      "cliente_id": 7,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "no_aplica"
+        },
+        "1879": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "pendiente"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-01T14:38:57.773Z"
+    },
+    {
+      "cliente_id": 93,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "02-04-2026",
+          "estado": "no_aplica"
+        },
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-02T13:31:33.710Z"
+    },
+    {
+      "cliente_id": 94,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "1887",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T19:16:58.828Z"
+    },
+    {
+      "cliente_id": 28,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T18:34:03.481Z"
+    },
+    {
+      "cliente_id": 26,
+      "asignadas": [
+        "1948",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T22:09:40.572Z"
+    },
+    {
+      "cliente_id": 89,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T22:15:29.186Z"
+    },
+    {
+      "cliente_id": 34,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:30:11.502Z"
+    },
+    {
+      "cliente_id": 46,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:30:43.643Z"
+    },
+    {
+      "cliente_id": 68,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T14:03:37.669Z"
+    },
+    {
+      "cliente_id": 38,
+      "asignadas": [
+        "1948",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T16:12:34.963Z"
+    },
+    {
+      "cliente_id": 42,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T15:58:04.630Z"
+    },
+    {
+      "cliente_id": 31,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T18:27:45.121Z"
+    },
+    {
+      "cliente_id": 32,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Noelia Castillo",
+          "fecha": "13-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-13T18:29:12.518Z"
+    },
+    {
+      "cliente_id": 66,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T18:47:54.663Z"
+    },
+    {
+      "cliente_id": 51,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T16:27:12.404Z"
+    },
+    {
+      "cliente_id": 47,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T18:41:24.510Z"
+    },
+    {
+      "cliente_id": 57,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "1879",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T16:33:46.888Z"
+    },
+    {
+      "cliente_id": 67,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T18:48:32.766Z"
+    },
+    {
+      "cliente_id": 101,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "no_aplica"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T14:02:37.561Z"
+    },
+    {
+      "cliente_id": 60,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T14:03:57.171Z"
+    },
+    {
+      "cliente_id": 74,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T21:32:10.339Z"
+    },
+    {
+      "cliente_id": 48,
+      "asignadas": [
+        "1948",
+        "F22",
+        "1835",
+        "1837",
+        "1879",
+        "1887"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:30:50.080Z"
+    },
+    {
+      "cliente_id": 63,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T20:43:43.048Z"
+    },
+    {
+      "cliente_id": 30,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T14:51:43.507Z"
+    },
+    {
+      "cliente_id": 36,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T14:55:00.278Z"
+    },
+    {
+      "cliente_id": 37,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T14:56:19.057Z"
+    },
+    {
+      "cliente_id": 44,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:30:25.981Z"
+    },
+    {
+      "cliente_id": 65,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T14:03:44.831Z"
+    },
+    {
+      "cliente_id": 52,
+      "asignadas": [
+        "1948",
+        "1837",
+        "1887",
+        "1947",
+        "F22"
+      ],
+      "checks": {
+        "1887": {
+          "obs": "05/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "05/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T15:04:28.357Z"
+    },
+    {
+      "cliente_id": 56,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T15:08:20.308Z"
+    },
+    {
+      "cliente_id": 39,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:30:20.910Z"
+    },
+    {
+      "cliente_id": 55,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "1879",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T16:31:14.671Z"
+    },
+    {
+      "cliente_id": 59,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T16:35:16.232Z"
+    },
+    {
+      "cliente_id": 72,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "1879",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T18:53:14.326Z"
+    },
+    {
+      "cliente_id": 71,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1887",
+        "F22",
+        "1879"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "en el SII aparece",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T19:39:32.231Z"
+    },
+    {
+      "cliente_id": 14,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "02-04-2026",
+          "estado": "no_aplica"
+        },
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-02T16:27:55.125Z"
+    },
+    {
+      "cliente_id": 76,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T19:55:26.790Z"
+    },
+    {
+      "cliente_id": 62,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T20:43:37.927Z"
+    },
+    {
+      "cliente_id": 75,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "1879",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T21:32:16.526Z"
+    },
+    {
+      "cliente_id": 82,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1887",
+        "1879",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "no_aplica"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T21:54:12.805Z"
+    },
+    {
+      "cliente_id": 85,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T22:15:39.812Z"
+    },
+    {
+      "cliente_id": 45,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:30:35.461Z"
+    },
+    {
+      "cliente_id": 84,
+      "asignadas": [
+        "1948",
+        "1879",
+        "F22",
+        "1837"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T20:09:16.283Z"
+    },
+    {
+      "cliente_id": 80,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T18:58:13.634Z"
+    },
+    {
+      "cliente_id": 88,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1879",
+        "1887",
+        "F22",
+        "1837"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T20:36:50.874Z"
+    },
+    {
+      "cliente_id": 49,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "",
+          "resp": "Ashly Morales",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-30T12:30:55.143Z"
+    },
+    {
+      "cliente_id": 10,
+      "asignadas": [
+        "1947",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "pendiente"
+        },
+        "1837": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "pendiente"
+        },
+        "1879": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "completada"
+        },
+        "1947": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "01-04-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-01T14:07:10.811Z"
+    },
+    {
+      "cliente_id": 103,
+      "asignadas": [
+        "1879",
+        "1887",
+        "1837",
+        "1835",
+        "1948",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Iska Araya",
+          "fecha": "02-04-2026",
+          "estado": "no_aplica"
+        },
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "",
+          "resp": "Maite Veron",
+          "fecha": "30-03-2026",
+          "estado": "no_aplica"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "F22": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "15-04-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-04-15T20:18:10.566Z"
+    },
+    {
+      "cliente_id": 83,
+      "asignadas": [
+        "1948",
+        "1835",
+        "1837",
+        "1879",
+        "1887",
+        "F22"
+      ],
+      "checks": {
+        "1835": {
+          "obs": "",
+          "resp": "Bastian Marre",
+          "fecha": "27-03-2026",
+          "estado": "no_aplica"
+        },
+        "1879": {
+          "obs": "27/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1887": {
+          "obs": "27/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "27-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "26/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-27T12:37:26.282Z"
+    },
+    {
+      "cliente_id": 86,
+      "asignadas": [
+        "1879",
+        "1948",
+        "F22"
+      ],
+      "checks": {
+        "1879": {
+          "obs": "11/02/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        },
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T19:08:47.630Z"
+    },
+    {
+      "cliente_id": 87,
+      "asignadas": [
+        "1948",
+        "F22"
+      ],
+      "checks": {
+        "1948": {
+          "obs": "14/03/2026",
+          "resp": "Bastian Marre",
+          "fecha": "14-03-2026",
+          "estado": "completada"
+        }
+      },
+      "updated_at": "2026-03-14T19:10:40.926Z"
+    }
+  ]
+}
