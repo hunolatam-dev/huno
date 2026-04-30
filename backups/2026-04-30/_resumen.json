@@ -1,0 +1,55 @@
+{
+  "fecha": "2026-04-30T08:07:31.060Z",
+  "tablas": {
+    "clientes": {
+      "registros": 115,
+      "ok": true
+    },
+    "rrhh": {
+      "registros": 166,
+      "ok": true
+    },
+    "ddjj_state": {
+      "registros": 108,
+      "ok": true
+    },
+    "facturas": {
+      "registros": 707,
+      "ok": true
+    },
+    "at2026_facturas": {
+      "registros": 0,
+      "ok": true
+    },
+    "at2026_abonos": {
+      "registros": 0,
+      "ok": true
+    },
+    "cartola_movimientos": {
+      "registros": 568,
+      "ok": true
+    },
+    "cartola_cuentas": {
+      "registros": 2,
+      "ok": true
+    },
+    "conciliaciones": {
+      "registros": 0,
+      "ok": true
+    },
+    "activity_log": {
+      "registros": 5135,
+      "ok": true
+    },
+    "personal": {
+      "registros": 9,
+      "ok": true
+    },
+    "notificaciones": {
+      "registros": 5125,
+      "ok": true
+    }
+  },
+  "total_registros": 11935,
+  "errores": []
+}

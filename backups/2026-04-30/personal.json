@@ -1,0 +1,176 @@
+{
+  "tabla": "personal",
+  "fecha_backup": "2026-04-30T08:07:31.060Z",
+  "total": 9,
+  "datos": [
+    {
+      "id": 12,
+      "nombre": "Sofia",
+      "apellido": "Castro",
+      "rol": "contabilidad",
+      "activo": true,
+      "clave": "aHVubzIwMjYyMA==",
+      "correo": "sofiacastroplaza2008@gmail.com",
+      "created_at": "2026-04-20T21:55:33.02279+00:00",
+      "roles": "[\"contabilidad\",\"rrhh\",\"gestion_clientes\"]",
+      "es_admin": false,
+      "modulos_acceso": [
+        "contabilidad",
+        "cartola",
+        "rrhh",
+        "pre_iva",
+        "documentos",
+        "gestion_clientes"
+      ],
+      "perfil_agenda": "agenda_software"
+    },
+    {
+      "id": 7,
+      "nombre": "Iska",
+      "apellido": "Araya",
+      "rol": "contabilidad",
+      "activo": false,
+      "clave": "VmVudXMlMDYxMDIwMjU=",
+      "correo": "iskarayach@gmail.com",
+      "created_at": "2026-03-19T12:32:55.720162+00:00",
+      "roles": "[\"contabilidad\"]",
+      "es_admin": false,
+      "modulos_acceso": [
+        "contabilidad",
+        "pre_iva",
+        "documentos",
+        "gestion_clientes"
+      ],
+      "perfil_agenda": ""
+    },
+    {
+      "id": 1,
+      "nombre": "Maite",
+      "apellido": "Veron",
+      "rol": "rrhh",
+      "activo": true,
+      "clave": "QW1pZ2ExMjI1",
+      "correo": "maite.veron@huno.cl",
+      "created_at": "2026-03-11T21:03:26.144844+00:00",
+      "roles": "[\"rrhh\",\"documentos\"]",
+      "es_admin": false,
+      "modulos_acceso": [
+        "rrhh",
+        "documentos",
+        "gestion_clientes"
+      ],
+      "perfil_agenda": "agenda_rrhh,agenda_adm"
+    },
+    {
+      "id": 2,
+      "nombre": "Constanza",
+      "apellido": "Ortiz",
+      "rol": "admin",
+      "activo": true,
+      "clave": "QmVuamkzMTEw",
+      "correo": "constanzaortiz0201@gmail.com",
+      "created_at": "2026-03-11T21:03:26.144844+00:00",
+      "roles": "[\"contabilidad\",\"rrhh\",\"finanzas\",\"pre_iva\",\"cartola\",\"documentos\",\"ddjj\",\"admin\"]",
+      "es_admin": true,
+      "modulos_acceso": [
+        "contabilidad",
+        "finanzas",
+        "cartola",
+        "rrhh",
+        "pre_iva",
+        "documentos",
+        "admin"
+      ],
+      "perfil_agenda": "agenda_marketing"
+    },
+    {
+      "id": 3,
+      "nombre": "Bastian",
+      "apellido": "Marre",
+      "rol": "admin",
+      "activo": true,
+      "clave": "RG9uYXRvMjA=",
+      "correo": "marre0201@gmail.com",
+      "created_at": "2026-03-11T21:03:26.144844+00:00",
+      "roles": null,
+      "es_admin": true,
+      "modulos_acceso": [
+        "contabilidad",
+        "finanzas",
+        "cartola",
+        "rrhh",
+        "pre_iva",
+        "documentos",
+        "admin"
+      ],
+      "perfil_agenda": "agenda_contabilidad,agenda_adm,agenda_software"
+    },
+    {
+      "id": 13,
+      "nombre": "Dayerlin",
+      "apellido": "Alvarez",
+      "rol": "admin",
+      "activo": true,
+      "clave": "ZGFubmFlMTIwOQ==",
+      "correo": "pholett.a@gmail.com",
+      "created_at": "2026-04-29T13:03:56.275325+00:00",
+      "roles": "[\"contabilidad\",\"rrhh\",\"finanzas\",\"ddjj\",\"admin\",\"gestion_clientes\"]",
+      "es_admin": true,
+      "modulos_acceso": [],
+      "perfil_agenda": ""
+    },
+    {
+      "id": 11,
+      "nombre": "Isabela",
+      "apellido": "Guerrero Montoya",
+      "rol": "contabilidad",
+      "activo": false,
+      "clave": "MTA4MjAwNw==",
+      "correo": "isa.9gt@gmail.com",
+      "created_at": "2026-04-13T19:55:44.094475+00:00",
+      "roles": "[\"contabilidad\",\"rrhh\",\"finanzas\",\"cartola\",\"ddjj\"]",
+      "es_admin": false,
+      "modulos_acceso": [],
+      "perfil_agenda": ""
+    },
+    {
+      "id": 9,
+      "nombre": "Isidora",
+      "apellido": "Rojas",
+      "rol": "admin",
+      "activo": true,
+      "clave": "aXNpdHRhYTIwMDc=",
+      "correo": "ignaciaisidora841@gmail.com",
+      "created_at": "2026-03-24T17:02:49.65559+00:00",
+      "roles": "[\"contabilidad\",\"rrhh\",\"pre_iva\",\"documentos\",\"ddjj\",\"admin\"]",
+      "es_admin": true,
+      "modulos_acceso": [
+        "contabilidad",
+        "rrhh",
+        "pre_iva",
+        "documentos",
+        "ddjj",
+        "admin"
+      ],
+      "perfil_agenda": ""
+    },
+    {
+      "id": 6,
+      "nombre": "Ashly",
+      "apellido": "Morales",
+      "rol": "contabilidad",
+      "activo": true,
+      "clave": "MThtb3JhbGVz",
+      "correo": "moralesanrangoashly@gmail.com",
+      "created_at": "2026-03-18T19:23:47.926694+00:00",
+      "roles": "[\"contabilidad\",\"rrhh\",\"ddjj\"]",
+      "es_admin": false,
+      "modulos_acceso": [
+        "contabilidad",
+        "pre_iva",
+        "documentos"
+      ],
+      "perfil_agenda": ""
+    }
+  ]
+}
